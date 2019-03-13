@@ -38,6 +38,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     TextView vista;
     BufferedReader in;
     ListView list;
+    DataSourceQuepassaeh missatge;
+    DataSourceQuepassaeh usuari;
+    Usuari u;
     String[] from = {"ID", "NOM", "EMAIL"};
     int[] to = {R.id.textId,R.id.textName,R.id.textEmail};
 
@@ -114,6 +117,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             map.put("EMAIL",jObject.getString("email"));
                             // map.put("ROLE",jObject.getString("fk_role"));
                             llista.add(map);
+                             u = new Usuari();
+                             u.setCodiUsuari(jObject.getLong("id"));
+                             u.setNom((jObject.getString("nom")));
+                             u.setEmail(jObject.getString("email"));
+                             usuari.createUsuari(u);
                         }
                     } catch (JSONException e){
                         e.printStackTrace();
