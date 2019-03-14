@@ -5,8 +5,7 @@ import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Preferencies extends AppCompatActivity {
-
+public class Preferencies {
     private static final String NOM_PREFERENCIES = "PreferenciesQuepassaEh";
     private final static String CLAU_CODIUSUARI="id";
     private final static String CLAU_USER="user";

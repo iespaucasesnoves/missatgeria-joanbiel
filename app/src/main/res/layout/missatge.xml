@@ -1,35 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <TextView
-        android:id="@+id/textId"
+        android:id="@+id/textNom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="16dp"
         android:layout_marginTop="9dp"
-        android:text="TextView" />
+        android:text="Usuari" />
 
     <TextView
-        android:id="@+id/textName"
+        android:id="@+id/textMissatge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="9dp"
-        android:layout_toEndOf="@+id/textId"
-        android:text="TextView" />
+        android:layout_below="@+id/textNom"
+        android:layout_marginStart="-59dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/textNom"
+        android:text="Missatge" />
 
     <TextView
-        android:id="@+id/textEmail"
+        android:id="@+id/textData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="38dp"
-        android:layout_marginTop="9dp"
-        android:layout_toEndOf="@+id/textName"
-        android:text="TextView" />
+        android:layout_alignTop="@+id/textNom"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="30dp"
+        android:text="Data" />
+
 </RelativeLayout>

@@ -1,5 +1,6 @@
 package com.example.joanbiel.quepassaeh;
 
+import android.content.Intent;
 import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -59,6 +60,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                 preferencies.setPassword(contrasenya.getText().toString());
                 preferencies.setCodiusuari(Integer.parseInt(dades.getString("codiusuari")));
                 preferencies.setToken(dades.getString("token"));
+                finish();
             } catch (JSONException e) {
                 e.printStackTrace();
             }

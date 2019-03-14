@@ -5,9 +5,18 @@ public class Missatge {
     String msg;
     String dataHora;//Intentar canvair-lo a DATETIME.
     long codiUsuari;
+    String nom;
 
     public Missatge() {
         this.codi = -1;
+    }
+
+    public Missatge(long codi, String msg, String dataHora, long codiUsuari, String nom) {
+        this.codi = codi;
+        this.msg = msg;
+        this.dataHora = dataHora;
+        this.codiUsuari = codiUsuari;
+        this.nom = nom;
     }
 
     public long getCodi() {
@@ -41,4 +50,8 @@ public class Missatge {
     public void setCodiUsuari( long codiUsuari) {
         this.codiUsuari = codiUsuari;
     }
+
+    public String getNom() { return nom; }
+
+    public void setNom(String nom) { this.nom = nom; }
 }

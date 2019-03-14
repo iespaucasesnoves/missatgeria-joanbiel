@@ -18,7 +18,7 @@
         android:layout_marginEnd="14dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="" />
+        android:text="RAMON" />
 
     <EditText
         android:id="@+id/contrasenya"
@@ -32,7 +32,7 @@
         android:layout_marginEnd="14dp"
         android:ems="10"
         android:inputType="textPassword"
-        android:text="" />
+        android:text="vives" />
 
     
 
@@ -43,5 +43,5 @@
         android:layout_below="@+id/contrasenya"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="23dp"
-        android:text="Button" />
+        android:text="Entrar" />
 </RelativeLayout>
